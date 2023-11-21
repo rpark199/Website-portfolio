@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Rebecca Park- Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://en.wikipedia.org/static/images/icons/wikipedia.png">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Mooli&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <img src="img/rebecca-park-logo.svg" alt="Personal logo of Rebecca Park" class="page-header_item">
+    <nav>
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="./index.html" role="menuitem" aria-label="Home page" class="navigation-list_item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="./about.html" role="menuitem" aria-label="About information" class="navigation-list_item">About</a>
+        </li>
+        <li role="presentation">
+          <a href="./contact.html" role="menuitem" aria-label="Contact information"
+            class="navigation-list_item">Contact</a>
+        </li>
+        <li role="presentation">
+          <a href="./work.html" role="menuitem" aria-label="My work page"
+            class="navigation-list-list_item--active">Work</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Contacts</h1>
+    <div>
+      Rebecca Park<br>
+      30 Mulberry Dr.<br>
+      United States<br>
+      <br>
+      Tel<a href="tel:+12679184611">+1 267 918 4611</a><br>
+      E-mail<a href="mailto:rebeccapark199@gmail.com">rebeccapark199@gmail.com</a>
+      <a href="mailto:rebeccapark199@gmail.com"><br>Contact me</a>
+    </div>
+    <form action="#" method="post" id="contact-form">
+      <label class="standard-label" for="contact-email">E-mail: </label>
+      <input type="email" id="contact-email" required>
+      <br>
+      <label class="standard-label" for="contact-tel" aria-label="telephone number">Telephone: </label>
+      <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+      <br>
+      <label class="standard-label" for="contact-message">Message: </label>
+      <textarea maxlength="240" id="contact-message" required></textarea>
+      <br>
+      <input type="submit" value="Send message">
+    </form>
+  </main>
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <img src="img/Github_icon.svg" alt="Github">
+      <img src="img/Instagram_icon.svg" alt="Instragram">
+      <img src="img/Linkedin_icon.svg" alt="LinkedIn">
+    </div>
+  </footer>
+  <a href="#top">Back to top</a>
+  <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
