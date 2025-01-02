@@ -35,28 +35,38 @@
     </nav>
   </header>
   <main>
-    <h1>Contacts</h1>
-    <div>
-      Rebecca Park<br>
-      30 Mulberry Dr.<br>
-      United States<br>
-      <br>
-      Tel<a href="tel:+12679184611">+1 267 918 4611</a><br>
-      E-mail<a href="mailto:rebeccapark199@gmail.com">rebeccapark199@gmail.com</a>
-      <a href="mailto:rebeccapark199@gmail.com"><br>Contact me</a>
-    </div>
-    <form action="#" method="post" id="contact-form">
-      <label class="standard-label" for="contact-email">E-mail: </label>
-      <input type="email" id="contact-email" required>
-      <br>
-      <label class="standard-label" for="contact-tel" aria-label="telephone number">Telephone: </label>
-      <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-      <br>
-      <label class="standard-label" for="contact-message">Message: </label>
-      <textarea maxlength="240" id="contact-message" required></textarea>
-      <br>
-      <input type="submit" value="Send message">
-    </form>
+    <div class="grid">
+		  <div class="grid-item">
+				<h2>Contact information</h2>
+				Rebecca Park<br>
+				Philadelphia, United States <br>
+				<br>
+				<a href="mailto:rebeccapark199@gmail.com">rebeccapark199(at)gmail.com</a>,
+				<p>
+					<a href="mailto:rebeccapark199@gmail.com">Contact me via mail!</a>
+				</p>
+				<p>Or use the contact form to send a message.</p>
+			</div>
+			<div class="grid-item">
+				<h2>Contact form</h2>
+				<form action="/" method="get" id="contact-form" onsubmit="alert('Thanks for reaching out!')">
+					<label class="standard-label" for="contact-info">Name:
+					</label> <input type="text" id="contact-info" required><br>
+					<label class="standard-label" for="contact-email">E-mail:
+					</label>
+					<input type="email" id="contact-email" required><br>
+
+					<label class="standard-label" for="contact-tel">Telephone:
+					</label>
+					<input type="tel" id="contact-tel"><br>
+
+					<label class="standard-label" for="txt-input">Message: </label>
+					<textarea id="txt-input" maxlength="240" required></textarea><br>
+
+					<input type="submit" value="Send message">
+				</form>
+			</div>
+		</div>
   </main>
   <footer class="page-footer">
     <p>Find me on</p>
