@@ -1,0 +1,37 @@
+#about-picture {
+    width: 50%;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+  }
+.about_me {
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  text-align: justify;
+}
+
+.about_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  max-width: 90%;
+}
+.about_bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  max-width: 95%;
+}
+@media all and (max-width: 750px) {
+    .about_me {
+        display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
