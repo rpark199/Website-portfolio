@@ -1,0 +1,116 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+#about-picture {
+    width: 50%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px auto;
+  }
+  .berlin_img_container {
+    text-align: center;
+  }
+  .sun {
+      -webkit-animation-duration: 4s;
+              animation-duration: 4s;
+      -webkit-animation-name: color-change;
+              animation-name: color-change;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+              animation-direction: alternate;
+      -webkit-animation-timing-function: linear;
+              animation-timing-function: linear;
+    }
+    .cloud-front {
+      -webkit-animation-duration: 30s;
+              animation-duration: 30s;
+      -webkit-animation-name: cloud-move;
+              animation-name: cloud-move;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+              animation-direction: alternate;
+      -webkit-animation-timing-function: linear;
+              animation-timing-function: linear;
+    }
+    @-webkit-keyframes color-change {
+      0% {
+        fill: #edc655;
+      }
+      50% {
+        fill: #fcffad;
+      }
+      100% {
+        fill: #f76414;
+      }
+    }
+    @keyframes color-change {
+      0% {
+        fill: #edc655;
+      }
+      50% {
+        fill: #fcffad;
+      }
+      100% {
+        fill: #f76414;
+      }
+    }
+    @-webkit-keyframes cloud-move {
+      from {
+        -webkit-transform: translate(0, 50px);
+                transform: translate(0, 50px);
+      }
+      to {
+        -webkit-transform: translate(200px, 50px);
+                transform: translate(200px, 50px);
+      }
+    }
+    @keyframes cloud-move {
+      from {
+        -webkit-transform: translate(0, 50px);
+                transform: translate(0, 50px);
+      }
+      to {
+        -webkit-transform: translate(200px, 50px);
+                transform: translate(200px, 50px);
+      }
+    }
+    @-webkit-keyframes cloud-move-reverse {
+      from {
+        -webkit-transform: translate(446px, 48px);
+                transform: translate(446px, 48px);
+      }
+      to {
+        -webkit-transform: translate(100px, 48px);
+                transform: translate(100px, 48px);
+      }
+    }
+    @keyframes cloud-move-reverse {
+      from {
+        -webkit-transform: translate(446px, 48px);
+                transform: translate(446px, 48px);
+      }
+      to {
+        -webkit-transform: translate(100px, 48px);
+                transform: translate(100px, 48px);
+      }
+    }
+    @media all and (max-width: 750px) {
+      .profile {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+      }
+    }
