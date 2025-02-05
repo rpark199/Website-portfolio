@@ -3,13 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Rebecca Park's Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="https://en.wikipedia.org/static/images/icons/wikipedia.png">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Mooli&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <link rel="favicon" href="favicon.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link ref="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.production.css">
+	<link rel="stylesheet" type="text/css" href="css/index.production.css">
+  <title>Rebecca Park's Portfolio</title>
 </head>
 
 <body>
@@ -33,14 +36,23 @@
         </li>
       </ul>
     </nav>
-    </div>
   </header>
-  <main class="profile">
-    <img src="img/rebecca-park.jpeg" class="profile_portrait" alt="Rebecca Park Portrait">
-    <h1 class="Profile_name">Rebecca Park</h1>
-    <p> Hi! My name is Rebecca Park. I am aspiring <span>web</span> developer from Pennsylvania, United States.</p>
-    <a href="#">Check out some of my works!</a>
-  </main>
+  <main>
+		<div class="profile">
+			<div class="profile_img">
+				<img src="img/profile_pic.jpg" class="profile__portrait"
+					alt="A selfie in an elevator, which is currently being used as a profile picture">
+			</div>
+			<div class="profile_info">
+				<h1>About me</h1>
+				<p>
+					My Name is Karo Ogorek. I am currently a full-stack web
+					developer in training at Career Foundry.
+				</p>
+				<a href="work.html"> Checkt out some of my code</a>
+			</div>
+		</div>
+	</main>
   <br>
   <br>
   <div>
@@ -52,7 +64,6 @@
     <p>Find me on</p>
     <div class="social-media">
       <img src="img/github.svg" alt="Github">
-      <img src="img/instagram.svg" alt="Instagram">
       <img src="img/linkedin.svg" alt="LinkedIn">
     </div>
     </div>
