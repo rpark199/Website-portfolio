@@ -1,0 +1,59 @@
+:root {
+  --color-darkblue: #22223B;
+  --color-blue: #21253D;
+  --color-bluegray: #4A4E69;
+  --color-beige: #9A8C98;
+  --color-lightbeige: #C9ADA7;
+  --color-whitebeige: #F2E9E4;
+  --lightfont-color: #fff;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    padding: 20px;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .grid-item {
+    background: var(--color-whitebeige);
+    padding: 20px;
+    text-align: center;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-beige);
+    border-radius: 3px;
+  }
+  #txt-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-beige);
+    border-radius: 3px;
+  }
+  @media all and (max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media all and (max-width: 750px) {
+    .grid {
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+  }
