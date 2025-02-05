@@ -1,0 +1,59 @@
+:root {
+  --color-darkblue: #22223B;
+  --color-blue: #21253D;
+  --color-bluegray: #4A4E69;
+  --color-beige: #9A8C98;
+  --color-lightbeige: #C9ADA7;
+  --color-whitebeige: #F2E9E4;
+  --lightfont-color: #fff;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .grid-item {
+    background-color: var(--color-whitebeige);
+    padding: 20px;
+    text-align: center;
+  }
+  @media all and (max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media all and (min-width: 500px) and (max-width: 750px){
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media all and (max-width: 750px) {
+    .grid {
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+  }
+
+  .project_img {
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+  }
+  .project_link {
+    text-decoration: none;
+    color: #1900ff;
+    padding: 20px 0 20px 0;
+  }
+  .project_link:visited {
+    text-decoration: none;
+    color: #1101a0;
+  }
